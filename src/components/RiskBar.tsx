@@ -1,9 +1,11 @@
 
 interface RiskBarProps {
   riskRating: number;
+  width: string;
+  heigth: string;
 }
 
-const RiskBar = ({ riskRating }: RiskBarProps) => {
+const RiskBar = ({ riskRating, width, heigth }: RiskBarProps) => {
   const circleRadius = 50;
   const strokeWidth = 8;
   const circleCircumference = 2 * Math.PI * circleRadius;
@@ -21,7 +23,7 @@ const RiskBar = ({ riskRating }: RiskBarProps) => {
 
   return (
     <div className="flex flex-col justify-center items-center text-center self-center">
-      <svg width="150" height="150" viewBox="0 0 120 120">
+      <svg width={width} height={heigth} viewBox="0 0 120 120">
         <circle
           cx="60"
           cy="60"
