@@ -3,9 +3,10 @@ interface RiskBarProps {
   riskRating: number;
   width: string;
   heigth: string;
+  reputation?: string;
 }
 
-const RiskBar = ({ riskRating, width, heigth }: RiskBarProps) => {
+const RiskBar = ({ riskRating, width, heigth, reputation }: RiskBarProps) => {
   const circleRadius = 50;
   const strokeWidth = 8;
   const circleCircumference = 2 * Math.PI * circleRadius;
@@ -58,7 +59,7 @@ const RiskBar = ({ riskRating, width, heigth }: RiskBarProps) => {
       </svg>
       <div className="flex flex-col">
         <span>User Reputation:</span>
-        <span className="text-[22px] font-bold">{getRiskLevel()}</span>
+        <span className="text-[22px] font-bold">{getRiskLevel() ? getRiskLevel() : reputation }</span>
       </div>
     </div>
   );

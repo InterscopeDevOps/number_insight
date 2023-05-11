@@ -3,3 +3,23 @@
 @tailwind utilities;
 
 
+/* Sticky Column */
+.sticky-column {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 3rem;
+  }
+  .sticky-parent .elementor-widget-wrap {
+    display: block !important;
+  }
+  @media only screen and (max-width: 600px) {
+    .sticky-column {
+      position: relative;
+    }
+  }
+  
+  .sticky-header {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 3rem;
+  }
