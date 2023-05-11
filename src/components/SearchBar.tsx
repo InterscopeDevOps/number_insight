@@ -21,7 +21,7 @@ const SearchBar: React.FC<SearchBarProps> = ({ searchPhoneNumbers, phoneNumberIn
           setPhoneNumberInput(numericValue);
         }}
         placeholder="Ingrese hasta 15 números de teléfono separados por espacios"
-        maxLength={170}
+        maxLength={168}
         className="w-full px-3 py-4 text-sm text-gray-700 bg-white border border-gray-300 rounded-md dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 focus:outline-none"
       />
 
