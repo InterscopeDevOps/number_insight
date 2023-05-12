@@ -38,7 +38,7 @@ const RiskBar = ({ riskRating, width, heigth, reputation }: RiskBarProps) => {
           cy="60"
           r={circleRadius}
           strokeWidth={strokeWidth}
-          stroke={riskRating >= 50 ? "red" : "green"}
+          stroke={riskRating >= 50 ? "red" : "#00A7C4"}
           strokeLinecap="round"
           fill="none"
           strokeDasharray={`${circleCircumference} ${circleCircumference}`}
@@ -51,15 +51,16 @@ const RiskBar = ({ riskRating, width, heigth, reputation }: RiskBarProps) => {
           textAnchor="middle"
           dy=".3em"
           fontSize="36px"
+          color="#ffffff"
           fontWeight="bold"
-          fill="#333"
+          fill="#ffffff"
         >
           {riskRating}
         </text>
       </svg>
       <div className="flex flex-col">
-        <span>User Reputation:</span>
-        <span className="text-[22px] font-bold">{getRiskLevel() ? getRiskLevel() : reputation }</span>
+        <span>User Reputation:</span> 
+        <span className="text-[22px] font-bold ">{getRiskLevel() ? getRiskLevel() : reputation }</span>
       </div>
     </div>
   );

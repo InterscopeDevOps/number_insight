@@ -26,14 +26,14 @@ const SearchBar: React.FC<SearchBarProps> = ({ searchPhoneNumbers, phoneNumberIn
       />
 
       <button
-        className="flex items-center justify-center md:w-[220px] w-full bg-blue-900 hover:bg-blue-800 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+        className="flex items-center justify-center md:w-[220px] w-full bg-[#00A7C4] hover:bg-[#048399] text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
         onClick={searchPhoneNumbers}
       >
         <BsSearch className="text-[20px] mr-2" />
         <span>Buscar</span>
       </button>
       <button
-        className="flex items-center justify-center md:w-[220px] w-full bg-blue-900 hover:bg-blue-800 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+        className="flex items-center justify-center md:w-[220px] w-full bg-[#00A7C4] hover:bg-[#048399] text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
         onClick={copyToClipboard}
       >
         <MdContentCopy className="text-[20px] mr-2" />

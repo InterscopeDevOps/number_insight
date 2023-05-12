@@ -221,10 +221,17 @@ function App() {
   return (
     <>
       <div className="w-full">
-        <div className="md:w-[90%] w-full px-4 mx-auto mb-10 mt-6">
-          <h1 className="md:text-[30px] text-[20px] font-bold text-center">
-            Validate Number
-          </h1>
+        <div className="md:w-[90%] w-full px-4 mx-auto mb-10 mt-10">
+          <div className="flex justify-center flex-col items-center">
+            <img
+              src="https://firebasestorage.googleapis.com/v0/b/searchapp-25415.appspot.com/o/LOGO%20RDG%20S.A%20copia.png?alt=media&token=05f78069-f771-4deb-a19a-b950bdcd458b"
+              className="w-[100px]"
+              alt="logo"
+            />
+            <h1 className="md:text-[38px] text-[20px] font-bold text-center dark:text-white">
+              Validate Number
+            </h1>
+          </div>
           <SearchBar
             searchPhoneNumbers={Excute2Function}
             phoneNumberInput={phoneNumberInput}
@@ -233,7 +240,9 @@ function App() {
           />
           <div className="flex gap-6 w-full my-10">
             <div className="md:w-[50%] sticky-column h-[90vh]">
-              <h1 className="text-center text-[26px] font-bold">RoboKiller </h1>
+              <h1 className="text-center text-[34px] font-bold dark:text-white">
+                RoboKiller{" "}
+              </h1>
               <NumberTest
                 searchResults={searchResults2}
                 error={error}
@@ -241,7 +250,9 @@ function App() {
               />
             </div>
             <div className="md:w-[50%]">
-              <h1 className="text-center text-[26px] font-bold">Scout</h1>
+              <h1 className="text-center text-[34px] font-bold dark:text-white">
+                Scout
+              </h1>
               <NumberSearch
                 searchResults={searchResults1}
                 error={error}
