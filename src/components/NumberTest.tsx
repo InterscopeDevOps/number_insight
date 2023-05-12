@@ -26,6 +26,9 @@ const NumberTest = ({ searchResults, loading, error }: SearchResult) => {
     setSortConfig({ key, direction });
   };
 
+
+
+// Sort the results
   const sortedResults = useMemo(() => {
     if (sortConfig.key) {
       const sorted = [...searchResults].sort((a, b) => {
