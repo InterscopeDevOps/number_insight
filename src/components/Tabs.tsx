@@ -11,7 +11,6 @@ interface TabsProps {
 
 const Tabs: React.FC<TabsProps> = ({ tabs }) => {
   const [activeTab, setActiveTab] = useState(tabs[0].title);
-
   // const indexTab = tabs.findIndex((tab) => tab.title === activeTab);
   return (
     <div>
